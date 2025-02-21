@@ -1,0 +1,180 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+h2 {
+    text-align: center;
+    color: #4A90E2;
+    margin: 30px 0;
+    font-size: 2rem;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #4A90E2;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Table row hover effect */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+th {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Action Links Styling */
+a {
+    text-decoration: none;
+    color: #4A90E2;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1c6ab2;
+}
+
+.delete {
+    color: #e74c3c;
+}
+
+.delete:hover {
+    color: #c0392b;
+}
+
+/* Image Preview Styling */
+.imagepreview {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Student Profile Action Column */
+.action a {
+    margin-right: 10px;
+}
+
+/* No Results Message */
+.no-results {
+    color: #ff4f4f;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Input and Button Styles (for search/filter inputs) */
+input[type="text"], select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #4A90E2;
+}
+
+/* Table Pagination (if any) */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #4A90E2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #1c6ab2;
+}
+
+.pagination a.active {
+    background-color: #1c6ab2;
+    color: white;
+}
+
+/* Container Styling for the table */
+.studentsTable {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flash Messages Styling */
+.flash-message {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.flash-message.success {
+    background-color: #2ecc71;
+}
+
+.flash-message.error {
+    background-color: #e74c3c;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .imagepreview {
+        width: 40px;
+        height: 40px;
+    }
+
+    .studentsTable {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

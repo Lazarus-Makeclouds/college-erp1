@@ -1,0 +1,19 @@
+.text-primary {
+    color: #007BFF; /* Blue */
+}
+
+.bg-secondary {
+    background-color: #FF6F61; /* Coral */
+}
+
+.text-muted-foreground {
+    color: #6C757D; /* Gray */
+}
+
+.bg-background {
+    background-color: #F9FAFB; /* Light Gray */
+}
+
+.bg-card {
+    background-color: #FFFFFF; /* White */
+}

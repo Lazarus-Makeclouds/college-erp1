@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 50px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Attendance</h1>
+    
+    <label for="month">Select Month and Year: </label>
+    <select id="month">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+
+    <input type="number" id="year" value="2025" min="1900" max="2100">
+    <button onclick="generateTable()">Generate Table</button>
+    
+    <div id="attendance-table"></div>
+
+    <script>
+        function generateTable() {
+            const month = document.getElementById('month').value;
+            const year = document.getElementById('year').value;
+
+            const daysInMonth = new Date(year, month, 0).getDate();
+            console.log(daysInMonth);
+            
+            
+            const students = ['John Doe', 'Jane Smith', 'Michael Johnson', 'Emily Davis'];
+            
+            let tableHTML = '<table><thead><tr><th>Student Name</th>';
+
+            for (let i = 1; i <= daysInMonth; i++) {
+                tableHTML += `<th>${i}</th>`;
+            }
+            
+            tableHTML += '</tr></thead><tbody>';
+            
+            students.forEach(student => {
+                tableHTML += `<tr><td>${student}</td>`;
+                for (let i = 1; i <= daysInMonth; i++) {
+                    tableHTML += `<td><input readonly type="text" placeholder="P/A"></td>`;
+                }
+                tableHTML += '</tr>';
+            });
+            
+            tableHTML += '</tbody></table>';
+            
+            // Display table
+            document.getElementById('attendance-table').innerHTML = tableHTML;
+        }
+    </script>
+</body>
+</html>

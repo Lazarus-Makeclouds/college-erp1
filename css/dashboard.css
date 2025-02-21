@@ -1,0 +1,59 @@
+nav {
+    background-color: #f0f0f0;
+
+}
+
+body {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    font-family: 'Poppins', sans-serif;
+    /* Apply Poppins font */
+}
+
+aside {
+    background-color: #f0f0f0;
+}
+
+aside svg {
+    color: #29aae2ad;
+}
+
+.blue :hover {
+    background-color: #29aae2ad;
+}
+
+aside svg :hover {
+    color: white;
+}
+
+/* svg :hover {
+    color: #29aae2ad;
+    background-color: none;
+} */
+
+.viewpro {
+    color: #f0f0f0;
+}
+
+.navbar {
+    background-color: rgba(215, 227, 228, 0.867);
+}
+
+.bg-blue {
+    background-color: #29aae2ad;
+}
+
+.gray-col {
+    background-color: #d4d1d1d5;
+}
+
+/*
+profile animation
+*/
+
+/* Hide success message initially */
+.success-message {
+    display: none;
+}

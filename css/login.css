@@ -1,0 +1,87 @@
+/* Custom styles for the login page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7fafc; /* Light background */
+    
+}
+
+.login-container {
+    max-width: 400px; /* Set a max width for the login box */
+    margin: auto; /* Center the container */
+    padding: 2rem; /* Add padding */
+    background: white; /* White background for the form */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-image: url(/register/image/logingpage-design.png);
+}
+
+h2 {
+    margin-bottom: 1rem; /* Space below heading */
+    color: #2d3748; /* Dark text color */
+    text-align: center; /* Center the heading */
+}
+
+p {
+    text-align: center; /* Center the paragraph */
+    color: #4a5568; /* Slightly lighter text color */
+    margin-bottom: 2rem; /* Space below paragraph */
+}
+
+.input-container {
+    position: relative; /* Needed for absolute positioning of icons */
+    margin-bottom: 1.5rem; /* Space between inputs */
+}
+
+.input-icon {
+    position: absolute; /* Position the icon inside the input */
+    top: 50%; /* Center the icon vertically */
+    left: 0.75rem; /* Add space from left */
+    transform: translateY(-50%); /* Center vertically */
+    color: #4c86d1; /* Gray color for the icon */
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 0.75rem 2.5rem; /* Padding with space for icon */
+    border: 1px solid #cbd5e0; /* Light gray border */
+    border-radius: 0.375rem; /* Rounded corners */
+    transition: border-color 0.2s; /* Smooth transition */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #63b3ed; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
+
+.input-btn {
+    margin-top: 1rem; /* Space above the button */
+}
+
+input[type="submit"] {
+    width: 100%; /* Full width for the button */
+    padding: 0.75rem; /* Padding */
+    background-color: #3182ce; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 0.375rem; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.2s; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #2b6cb0; /* Darker blue on hover */
+}
+
+.register {
+    text-align: center; /* Center the registration prompt */
+    margin-top: 1rem; /* Space above */
+}
+
+.register a {
+    color: #3182ce; /* Blue text */
+    text-decoration: underline; /* Underline the link */
+}
